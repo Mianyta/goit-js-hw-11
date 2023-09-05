@@ -5,7 +5,7 @@ axios.defaults.baseURL = 'https://pixabay.com/api/';
 
 async function serviceSearchImg(currentPage, valueSearch) {
   const params = new URLSearchParams({
-    key: '39204172-43f1bb7905ec0f3758e1627d0',
+    key: '39267126-0a41b3b9689f557b8f9deee48',
     q: valueSearch,
     image_type: 'photo',
     orientation: 'horizontal',
