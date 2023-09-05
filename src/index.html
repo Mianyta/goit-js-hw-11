@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 10</title>
+    <title>Page title</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
-
-    <script src="index.js" type="module"></script>
+    <div class="container">
+     <div class="form-container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="btn-search"><img width="40" height="40" src="https://img.icons8.com/tapes/40/000000/experimental-search-tapes.png" alt="experimental-search-tapes"/></button>
+     </div>
+      </form>
+      <div class="gallery"></div>
+    </div>
+    <button type="button" class="load-more-hidden">Load more</button>
   </body>
 </html>
